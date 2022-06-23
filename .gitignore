@@ -1,0 +1,12 @@
+
+**/*.pyc
+**/.DS_Store
+**/.idea
+**/.ipynb_checkpoints
+
+# Xcode
+*.pbxuser
+*.xcuserstate
+project.xcworkspace/
+xcuserdata/
+*.xcbkptlist
