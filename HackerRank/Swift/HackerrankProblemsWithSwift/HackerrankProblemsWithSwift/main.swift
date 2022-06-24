@@ -7,5 +7,8 @@
 
 import Foundation
 
-let a = MaxElement()
+//let a = MaxElement()
+//a.executeCode()
+
+let a = ClimbingLeaderBoard()
 a.executeCode()
