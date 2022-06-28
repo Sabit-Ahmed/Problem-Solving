@@ -4,10 +4,10 @@ from typing import List
 class LongestCommonPrefix14:
 
     def __init__(self):
-        res = self.longestCommonPrefix(["ab","a"])
-        print(res)
+        res = self.longestCommonPrefixWithBST(["ab","a"])
+        # print(res)
 
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefixBruteForce(self, strs: List[str]) -> str:
         minLength = 999999999999
         indexOfMinElement = -1
         for (i, v) in enumerate(strs):
@@ -24,3 +24,22 @@ class LongestCommonPrefix14:
                     return outputStr
 
         return outputStr
+
+    def longestCommonPrefixWithBST(self, strs: List[str]) -> str:
+
+
+        outputStr = ""
+        strs.sort(key=len)
+        minElement = strs[0]
+        strs = strs[1:]
+        mid = int(len(minElement) / 2)
+        left = strs[0:mid]
+        right = strs[mid + 1:len(minElement) - 1]
+
+        while(left != right):
+            for i in strs:
+                if left is in i:
+
+
+    # def findCommonPrefix(self, index, strs):
+
