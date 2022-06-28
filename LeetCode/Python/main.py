@@ -2,12 +2,13 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from LongestCommonPrefix14 import LongestCommonPrefix14
 from NonDecreasingArray import NonDecreasingArray
 
 
 def main():
-    NonDecreasingArray()
-
+    # NonDecreasingArray()
+    LongestCommonPrefix14()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
