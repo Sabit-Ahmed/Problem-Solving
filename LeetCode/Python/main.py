@@ -5,6 +5,7 @@
 from LeetCode.Python.LongestCommonPrefix14 import LongestCommonPrefix14
 from LeetCode.Python.NonDecreasingArray import NonDecreasingArray
 from LeetCode.Python.SquaresOfSortedArray import SquaresOfSortedArray
+from LeetCode.Python.DuplicateZeros import DuplicateZeros
 
 from LeetCode.Python.ValidParentheses import ValidParentheses
 
@@ -13,7 +14,8 @@ def main():
     # NonDecreasingArray()
     # LongestCommonPrefix14()
     # ValidParentheses()
-    SquaresOfSortedArray()
+    # SquaresOfSortedArray()
+    DuplicateZeros()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
