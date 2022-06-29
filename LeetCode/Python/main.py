@@ -4,6 +4,7 @@
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 from LeetCode.Python.LongestCommonPrefix14 import LongestCommonPrefix14
 from LeetCode.Python.NonDecreasingArray import NonDecreasingArray
+from LeetCode.Python.SquaresOfSortedArray import SquaresOfSortedArray
 
 from LeetCode.Python.ValidParentheses import ValidParentheses
 
@@ -11,7 +12,8 @@ from LeetCode.Python.ValidParentheses import ValidParentheses
 def main():
     # NonDecreasingArray()
     # LongestCommonPrefix14()
-    ValidParentheses()
+    # ValidParentheses()
+    SquaresOfSortedArray()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

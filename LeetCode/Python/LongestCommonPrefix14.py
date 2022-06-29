@@ -36,9 +36,9 @@ class LongestCommonPrefix14:
         left = strs[0:mid]
         right = strs[mid + 1:len(minElement) - 1]
 
-        while(left != right):
-            for i in strs:
-                if left is in i:
+        # while(left != right):
+        #     for i in strs:
+        #         if left is in i:
 
 
     # def findCommonPrefix(self, index, strs):
