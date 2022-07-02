@@ -3,10 +3,10 @@ from typing import List
 class MergeSortedArray:
 
     def __init__(self):
-        nums1 = [0]
-        m = 0
-        nums2 = [1]
-        n = 1
+        nums1 = [4,5,6,0,0,0]
+        m = 3
+        nums2 = [1,2,3]
+        n = 3
         self.mergeOpimized(nums1, m, nums2, n)
 
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
@@ -21,12 +21,15 @@ class MergeSortedArray:
     def mergeOpimized(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         nums3 = nums1.copy()
         if n > 0:
-            if m == 0:
-                nums1.clear()
-                nums1 = nums2.copy()
-            elif nums1[m - 1] <= nums2[0]:
+            if m == 0 or nums3[m - 1] <= nums2[0]:
                 for i in range(n):
                     nums1[m + i] = nums2[i]
+            elif nums3[0] > nums2[n - 1]:
+                for i in range(m+n):
+                    if i < m:
+                        nums1[i] = nums2[i]
+                    else:
+                        nums1[i] = nums3[m - i]
             else:
                 i = 0
                 j = 0
