@@ -10,8 +10,11 @@ class RemoveElement:
         print(res)
 
     def removeElement(self, nums: List[int], val: int) -> int:
+        c = 0
         for i in range(len(nums) - 1):
             if nums[i] == val:
-                nums[i] = nums[i + 1]
+                c += 1
 
-        return
+        for i in range(len(nums) - c):
+            if nums[i] == val:
+                nums[i] = nums[i + 1]
