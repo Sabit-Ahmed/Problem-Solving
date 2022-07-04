@@ -8,6 +8,7 @@ from LeetCode.Python.SquaresOfSortedArray import SquaresOfSortedArray
 from LeetCode.Python.DuplicateZeros import DuplicateZeros
 from LeetCode.Python.MergeSortedArray import MergeSortedArray
 from LeetCode.Python.ValidParentheses import ValidParentheses
+from LeetCode.Python.RemoveElement import RemoveElement
 
 
 def main():
@@ -16,7 +17,8 @@ def main():
     # ValidParentheses()
     # SquaresOfSortedArray()
     # DuplicateZeros()
-    MergeSortedArray()
+    # MergeSortedArray()
+    RemoveElement()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
