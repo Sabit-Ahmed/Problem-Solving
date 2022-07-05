@@ -10,7 +10,7 @@ from LeetCode.Python.MergeSortedArray import MergeSortedArray
 from LeetCode.Python.ValidParentheses import ValidParentheses
 from LeetCode.Python.RemoveElement import RemoveElement
 from LeetCode.Python.RemoveDuplicatesFromSortedArray import RemoveDuplicatesFromSortedArray
-
+from LeetCode.Python.CheckDoubleInArray import CheckDoubleInArray
 
 def main():
     # NonDecreasingArray()
@@ -20,7 +20,8 @@ def main():
     # DuplicateZeros()
     # MergeSortedArray()
     # RemoveElement()
-    RemoveDuplicatesFromSortedArray()
+    # RemoveDuplicatesFromSortedArray()
+    CheckDoubleInArray()
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
