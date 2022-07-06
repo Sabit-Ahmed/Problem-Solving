@@ -4,16 +4,25 @@ from typing import List
 class CheckDoubleInArray:
 
     def __init__(self):
-        arr = [10,2,5,3]
-        res = self.checkIfExist(arr)
+        arr = [0,-1,4,-9,-8]
+        res = self.checkIfExistTwoPass(arr)
         print(res)
 
-    def checkIfExist(self, arr: List[int]) -> bool:
+    def checkIfExistTwoPass(self, arr: List[int]) -> bool:
         hashmap = {}
+        zero_counter = 0
         for i in range(len(arr)):
-            product = arr[i] / 2
-            print(hashmap.keys())
-            if product in hashmap.keys():
+            if arr[i] != 0:
+                product = arr[i] * 2
+                hashmap[product] = i
+            else:
+                zero_counter += 1
+
+        if zero_counter > 1:
+            return True
+
+        for i in range(len(arr)):
+            # print(hashmap.keys())
+            if arr[i] in hashmap.keys():
                 return True
-            hashmap[product] = i
         return False
