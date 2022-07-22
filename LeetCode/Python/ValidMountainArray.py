@@ -4,7 +4,7 @@ from typing import List
 class ValidMountainArray:
 
     def __init__(self):
-        res = self.validMountainArray([1,7,9,5,4,1,2])
+        res = self.validMountainArray([3,5,6])
         print(res)
 
     def validMountainArray(self, arr: List[int]) -> bool:
@@ -20,14 +20,25 @@ class ValidMountainArray:
         if len(arr) <= 2:
             return False
 
-        while i > 0 and j < len(arr) - 1:
-            # print(i)
-            if arr[left] >= arr[i] or arr[right] >= arr[j]:
+        while i > 0:
+            # print(f"i:: {i}")
+            # print(f"left:: {left}")
+
+            if arr[left] >= arr[i]:
+                return False
+            if arr[left] < arr[i]:
+                left -= 1
+                i -= 1
+
+        while j < len(arr) - 1:
+            # print(f"j:: {j}")
+            # print(f"right:: {right}")
+
+            if arr[right] >= arr[j]:
                 return False
 
-            left -= 1
-            i -= 1
-            right += 1
-            j += 1
+            if arr[right] < arr[j]:
+                right += 1
+                j += 1
 
         return True
